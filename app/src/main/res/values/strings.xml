@@ -3,4 +3,10 @@
     <string name="first_button">Расписание на день</string>
     <string name="second_button">Календарь на день</string>
     <string name="third_button">Домашние задания</string>
+    <string name="time_start">12:40</string>
+    <string name="time_end">14:00</string>
+    <string name="subject">Нейросетевые и нечеткие модели</string>
+    <string name="type">Практика</string>
+    <string name="room">Ауд. 149</string>
+    <string name="teacher">Городецкий Э. Р.</string>
 </resources>

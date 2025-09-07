@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,5 +14,10 @@ class MainActivity : AppCompatActivity() {
         val button_day = findViewById<Button>(R.id.buttonDay)
         val button_calendar = findViewById<Button>(R.id.buttonCalendar)
         val button_homework = findViewById<Button>(R.id.buttonHomework)
+
+        button_day.setOnClickListener {
+            val intent = Intent(this, DayActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
