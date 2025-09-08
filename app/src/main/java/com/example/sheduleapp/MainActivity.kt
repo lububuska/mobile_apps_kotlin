@@ -19,5 +19,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DayActivity::class.java)
             startActivity(intent)
         }
+
+        button_calendar.setOnClickListener {
+            val intent = Intent(this, CalendarActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

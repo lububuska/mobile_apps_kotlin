@@ -50,72 +50,146 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
-                    android:backgroundTint="@color/purple_500"
+                    android:backgroundTint="@color/purple"
                     app:cardCornerRadius="16dp"
+                    android:layout_marginBottom="10dp"
                     >
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="16dp"
-                        android:id="@+id/container"
+                        android:id="@+id/subject1"
                         >
 
                         <TextView
-                            android:id="@+id/tvTimeStart"
+                            android:id="@+id/tvTimeStart1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:text="@string/time_start"
+                            android:text="@string/time_start1"
                             android:textColor="@color/white" />
 
                         <TextView
-                            android:id="@+id/tvTimeEnd"
+                            android:id="@+id/tvTimeEnd1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:text="@string/time_end"
+                            android:text="@string/time_end1"
                             android:textColor="@color/white" />
 
                         <TextView
-                            android:id="@+id/tvSubject"
+                            android:id="@+id/tvSubject1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/tvTimeStart"
-                            android:text="@string/subject"
+                            app:layout_constraintStart_toEndOf="@id/tvTimeStart1"
+                            android:text="@string/subject1"
                             android:textColor="@color/white"
                             android:paddingLeft="10dp"/>
 
                         <TextView
-                            android:id="@+id/tvType"
+                            android:id="@+id/tvType1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/tvTimeEnd"
-                            android:text="@string/type"
+                            app:layout_constraintStart_toEndOf="@id/tvTimeEnd1"
+                            android:text="@string/type1"
                             android:textColor="@color/white"
                             android:paddingLeft="10dp"/>
 
                         <TextView
-                            android:id="@+id/tvRoom"
+                            android:id="@+id/tvRoom1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/tvType"
-                            android:text="@string/room"
+                            app:layout_constraintStart_toEndOf="@id/tvType1"
+                            android:text="@string/room1"
                             android:textColor="@color/white"
                             android:paddingLeft="10dp"/>
 
                         <TextView
-                            android:id="@+id/tvTeacher"
+                            android:id="@+id/tvTeacher1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toEndOf="@id/tvRoom"
-                            android:text="@string/teacher"
+                            app:layout_constraintStart_toEndOf="@id/tvRoom1"
+                            android:text="@string/teacher1"
+                            android:textColor="@color/white"
+                            android:paddingLeft="10dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/purple"
+                    app:cardCornerRadius="16dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:id="@+id/subject2"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvTimeStart2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/time_start2"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvTimeEnd2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:text="@string/time_end2"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tvSubject2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvTimeStart2"
+                            android:text="@string/subject2"
+                            android:textColor="@color/white"
+                            android:paddingLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvType2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvTimeEnd2"
+                            android:text="@string/type2"
+                            android:textColor="@color/white"
+                            android:paddingLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvRoom2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvType2"
+                            android:text="@string/room2"
+                            android:textColor="@color/white"
+                            android:paddingLeft="10dp"/>
+
+                        <TextView
+                            android:id="@+id/tvTeacher2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/tvRoom2"
+                            android:text="@string/teacher2"
                             android:textColor="@color/white"
                             android:paddingLeft="10dp"/>
 

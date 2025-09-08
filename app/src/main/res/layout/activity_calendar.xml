@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tvTime"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/teal"
+            />
+
+        <com.example.sheduleapp.SyncedHorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:id="@+id/headerScroll">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Пн"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/teal"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Вт"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/teal"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Ср"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/teal"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Чт"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/teal"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Пт"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/teal"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Сб"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="@color/teal"/>
+            </LinearLayout>
+        </com.example.sheduleapp.SyncedHorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/time1"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/time2"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/time3"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/time4"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <com.example.sheduleapp.SyncedHorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal"
+            android:id="@+id/bodyScroll">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/calendar_subject1"
+                        android:padding="10dp"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="@color/purple_200"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/calendar_subject2"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/purple_200"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/calendar_subject3"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/purple_200"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/calendar_subject4"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/purple_200"
+                        android:textColor="@color/black"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/calendar_subject5"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/purple_200"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text=""
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/white"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="@string/calendar_subject5"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:background="@color/purple_200"
+                        android:textColor="@color/black"/>
+                </TableRow>
+            </TableLayout>
+        </com.example.sheduleapp.SyncedHorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>
